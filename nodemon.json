@@ -1,0 +1,25 @@
+{
+  "colours": true,
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    ".test.js",
+    "fixtures/*"
+  ],
+  "inspect": "src/server/index.js",
+  "verbose": true,
+  "execMap": {
+    "js": "npm run babel-node src/server/index.js"
+  },
+  "events": {
+    "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
+  },
+  "watch": [
+    "src/server",
+    "src/universal"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js gql"
+}

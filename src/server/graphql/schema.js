@@ -20,10 +20,12 @@ const resolverMap = {
   }
 }
 
-export default makeExecutableSchema({
+export const schema = makeExecutableSchema({
   typeDefs: [
     SchemaDefinition, RootQuery,
     // ...Post
   ],
   resolvers: resolverMap,
 })
+
+export default schema

@@ -34,3 +34,7 @@ node_modules/
 ### Redis ###
 # Ignore redis binary dump (dump.rdb) files
 *.rdb
+
+### VS Code ###
+# Ignore .vscode files
+.vscode
